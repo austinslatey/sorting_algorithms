@@ -1,0 +1,1 @@
+// no test js in starter files
