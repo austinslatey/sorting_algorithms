@@ -5,6 +5,12 @@ const mergeSort = (startArray) => {
     return startArray;
   }
   
+  const mid = Math.floor(length / 2);
+  const leftArray = startArray.slice(0, mid);
+  const rightArray = startArray.slice(mid, length);
+
+  mergeSort(leftArray);
+  mergeSort(rightArray);
   
 }
 
