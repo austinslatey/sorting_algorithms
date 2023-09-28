@@ -8,7 +8,7 @@ const mergeSort = (startArray) => {
   const leftArray = startArray.slice(0, mid);
   const rightArray = startArray.slice(mid, length);
 
-  
+  return merge(mergeSort(leftArray), mergeSort(rightArray));
 }
 
 const merge = (leftArray, rightArray) => {
